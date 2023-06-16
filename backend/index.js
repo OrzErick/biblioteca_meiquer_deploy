@@ -2,16 +2,20 @@ import express from "express"
 import mysql from "mysql"
 import cors from "cors"
 
+const path = require('path')
+
 const app = express()
 app.use(cors({origin:true}))
 
 // Cambiar username y contrasena en deploy
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "biblioteca",
-    password:"password",
-    database: "bibliotecameiquer"
+    host: "us-cdbr-east-06.cleardb.net",
+    user: "bf0a42aeb7d40",
+    password:"4f6cf533",
+    database: "heroku_264c75a097e4d01"
 })
+
+app.use(exoress.static(path.resolve(__dirname, '../client/build')));
 
 // Alumnos solo pueden acceder a videos y libros
 app.get("/Alumno", (req, res)=>{
@@ -174,6 +178,10 @@ app.get("/Maestro/:idparam", (req, res)=>{
         return res.json(data)
     })
 })
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../client/build','index.html'));
+});
 
 app.listen(8800, ()=>{
     console.log("connected to back")
