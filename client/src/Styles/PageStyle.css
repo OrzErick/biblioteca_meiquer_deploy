@@ -1,0 +1,149 @@
+
+body{
+  margin: 0;
+  padding: 0;
+}
+.navegacion{
+  float: left;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1vh;
+  background-color: rgb(115,136,153);
+  padding-bottom: 1vh;
+  border-radius: 10px;
+}
+.navegacion2{
+    float: left;
+    width: 90%;
+    padding-bottom: 1vh;
+    margin-top: 3vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(115,136,153);
+    border-radius: 10px;
+  }
+.bg {
+    float: left;
+    width: 100%;
+    background-color: rgb(115,136,153);
+  }
+.bg2{
+  float: left;
+  width: 100vh;
+  background-color: rgb(115,136,153);
+}
+.left{
+  float: left;
+  width: 100%;
+  border-radius: 10%;
+}
+.contenedorDeContenedores{
+
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  
+}
+.contenedor{
+  float: left;
+  padding-bottom: 2.5vh;
+  margin-top: 2vh;
+  margin-right: 2vh;
+  min-height: 50%;
+}
+
+.contenedortexto{
+  
+
+  margin-bottom: 2.5vh;
+}
+.titulo{
+  font-size: 3vh;
+  text-align: center;
+}
+
+.centrarboton{
+  margin: auto;
+  width: 55%;
+}
+button{
+  
+  margin-top: 1vh;
+  margin-left: 2vh;
+  font-size: 3vh;
+  padding: 0.20vh;
+  
+}
+.btt{
+  background-color: #3F51B5;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 2.5vh;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: .5s, color .10s;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
+}
+.bigbtt{
+  background-color: #3F51B5;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 2.5vh;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: .5s, color .10s;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
+}
+.btt:hover {
+  background-color: #303F9F;
+  transform: scale3d(1.2, 1.2, 0.3);
+      -webkit-transform: scale3d(1.2, 1.2, 0.3);
+      -moz-transform: scale3d(1.2, 1.2, 0.3);
+}
+.bigbtt:hover {
+  background-color: #303F9F;
+  transform: scale3d(1.2, 1.2, 0.3);
+      -webkit-transform: scale3d(1.2, 1.2, 0.3);
+      -moz-transform: scale3d(1.2, 1.2, 0.3);
+}
+.portada{
+  float: left;
+  width: 50%;
+  height: 10vh;
+  border-color: rgb(72,85,104);
+  border-style: groove;
+  border-radius: 2%;
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+
+.logo{
+  width: 5vh;
+  height: 2.5vh;
+}
+.navcolor{
+  background-color: rgb(72,85,104);
+}
+.centrar{
+  margin: auto;
+  width: 75%;
+}
+.libros{
+  height:40vh;
+  width: 30vh;
+}

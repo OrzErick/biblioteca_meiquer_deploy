@@ -1,0 +1,85 @@
+.bg{
+  background-color: darkcyan;
+ 
+}
+.bg2{
+    width: 100%;
+    background-color: darkcyan;
+    height: 100vh;
+  }
+body{
+    padding: 0;
+    margin: 0;
+}
+.atento{
+    font-size: 5vh;
+}
+
+.bt_atras{
+    background-color: #3F51B5;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 2.5vh;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: .5s, color .10s;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
+}
+
+.bt_atras:hover {
+    background-color: #303F9F;
+    transform: scale3d(1.2, 1.2, 0.3);
+        -webkit-transform: scale3d(1.2, 1.2, 0.3);
+        -moz-transform: scale3d(1.2, 1.2, 0.3);
+  }
+  .bg_infovideo {
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
+    padding: 20px;
+  }
+  
+  .card_descripciones {
+    background-color: rgb(49, 139, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .duration {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .izquierda_video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  .cover{
+    width: 25rem;
+    height: 35rem;
+  }
+  

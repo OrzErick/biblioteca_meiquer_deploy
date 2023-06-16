@@ -1,0 +1,140 @@
+
+body{
+    margin: 0;
+    padding: 0;
+  }
+  .navbar2{
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1vh;
+    background-color: #FFF2D3;
+    padding-bottom: 1vh;
+    border-radius: 10px;
+  }
+  .navbar{
+      float: left;
+      width: 90%;
+      padding-bottom: 1vh;
+      margin-top: 3vh;
+      margin-left: 5%;
+      margin-right: 5%;
+      background-color: #FFF2D3;
+      border-radius: 10px;
+    }
+  .bg {
+      float: left;
+      width: 100%;
+      background-color: rgb(247,239,238);
+    }
+  .bg2{
+    float: left;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(247,239,238);
+  }
+  .left{
+    float: left;
+    width: 100%;
+    border-radius: 10%;
+  }
+  .contenedorDeContenedores{
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    
+  }
+  .contenedor{
+    float: left;
+    padding-bottom: 2.5vh;
+    margin-top: 2vh;
+    margin-right: 2vh;
+  }
+  .contenedorimg{
+    float: left;
+    height: 15vh;
+    width: 25vh;
+    margin-top: 2.5vh;
+    margin-left: 2.5vh;
+  }
+  .contenedortexto{
+    margin-top: 2.5vh;
+    margin-left: 2.5vh;
+    margin-right: 2vh;
+  }
+  
+  .centrarboton{
+    margin: auto;
+    width: 55%;
+  }
+  button{
+    
+    margin-top: 1vh;
+    margin-left: 2vh;
+    font-size: 3vh;
+    padding: 0.20vh;
+    
+  }
+  .bigbtt{
+    background-color: #FED3E0;
+    color: #5C4B51;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 2.5vh;
+    cursor: pointer;
+    border-radius: 8px;
+
+    transition: .5s, color .10s;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
+  }
+  .btt{
+    background-color: #FED3E0;
+    color: #5C4B51;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 2.5vh;
+    cursor: pointer;
+    border-radius: 8px;
+
+    transition: .5s, color .10s;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
+  }
+  .btt:hover {
+    background-color: #FFC9D7;
+    transform: scale3d(1.2, 1.2, 0.3);
+      -webkit-transform: scale3d(1.2, 1.2, 0.3);
+      -moz-transform: scale3d(1.2, 1.2, 0.3);
+  }
+  .bigbtt:hover {
+    background-color: #FFC9D7;
+    transform: scale3d(1.2, 1.2, 0.3);
+      -webkit-transform: scale3d(1.2, 1.2, 0.3);
+      -moz-transform: scale3d(1.2, 1.2, 0.3);
+  }         
+
+  .portada{
+    float: left;
+    width: 50%;
+    height: 10vh;
+    border-color: rgb(72,85,104);
+    border-style: groove;
+    border-radius: 2%;
+  }
+  .navcolor{
+    background-color: rgb(72,85,104);
+  }
+  .selecciona{
+    color: #5C4B51;
+  }
