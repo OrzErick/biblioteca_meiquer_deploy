@@ -1,8 +1,7 @@
 import express from "express"
 import mysql from "mysql"
 import cors from "cors"
-
-const path = require('path')
+import path from "path"
 
 const app = express()
 app.use(cors({origin:true}))
