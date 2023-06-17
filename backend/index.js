@@ -3,12 +3,6 @@ import mysql from "mysql";
 import cors from "cors";
 import path from "path";
 
-import { fileURLToPath } from "url";
-import { dirname, resolve } from "path";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
 const app = express();
 app.use(cors({ origin: true }));
 
@@ -20,46 +14,17 @@ const dbConfig = {
   database: "heroku_264c75a097e4d01",
 };
 
-const connectionLimit = 10;
-let connectionPool = [];
-
-function createConnectionPool() {
-  for (let i = 0; i < connectionLimit; i++) {
-    const dbConnection = mysql.createConnection(dbConfig);
-    connectionPool.push(dbConnection);
-  }
-}
-
-function getConnectionFromPool() {
-  if (connectionPool.length === 0) {
-    return null;
-  }
-  return connectionPool.pop();
-}
-
-function releaseConnectionToPool(connection) {
-  connectionPool.push(connection);
-}
-
-function queryFromPool(query, params) {
-  return new Promise((resolve, reject) => {
-    const connection = getConnectionFromPool();
-    if (!connection) {
-      reject(new Error("Connection pool exhausted"));
-    } else {
-      connection.query(query, params, (error, results) => {
-        releaseConnectionToPool(connection);
-        if (error) {
-          reject(error);
-        } else {
-          resolve(results);
-        }
-      });
-    }
-  });
-}
+// ... Define connection pooling and query functions ...
 
 app.use(express.static(path.resolve(__dirname, "../client/build")));
+
+// Set CORS headers to allow cross-origin access
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "https://www.herokucdn.com");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
 
 // Alumnos solo pueden acceder a videos y libros
 app.get("/Alumno", async (req, res) => {
