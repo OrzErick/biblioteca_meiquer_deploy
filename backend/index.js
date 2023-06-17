@@ -9,7 +9,7 @@ app.use(cors({ origin: true }));
 // Change username and password in deployment
 const dbConfig = {
   host: "us-cdbr-east-06.cleardb.net",
-  user: "bf0a42aeb7d40",
+  user: "bf0a42aeb7d407",
   password: "4f6cf533",
   database: "heroku_264c75a097e4d01",
 };
