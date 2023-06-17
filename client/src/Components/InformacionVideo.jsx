@@ -19,7 +19,7 @@ const InformacionVideo = () => {
     useEffect(()=>{
         const fetchVideo = async ()=>{
             try{
-                const res = await axios.get("/Video/"+idVideo)
+                const res = await axios.get("http://localhost:8800/Video/"+idVideo)
                 setContenido(res.data);
             }catch(err){
                 console.log(err)

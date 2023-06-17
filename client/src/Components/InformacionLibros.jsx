@@ -17,7 +17,7 @@ const InformacionLibros = () => {
     useEffect(()=>{
         const fetchLibro = async ()=>{
             try{
-                const res = await axios.get("/Libro/"+idLibro)
+                const res = await axios.get("http://localhost:8800/Libro/"+idLibro)
                 setContenido(res.data);
             }catch(err){
                 console.log(err)

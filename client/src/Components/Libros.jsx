@@ -16,10 +16,10 @@ const Libros = () => {
         const fetchLibros = async ()=>{
             try{
                 if(etiqueta == ""){
-                    const res = await axios.get("/Libros")
+                    const res = await axios.get("http://localhost:8800/Libros")
                     setContenido(res.data);
                 }else{
-                    const res = await axios.get("/Libros/"+etiqueta)
+                    const res = await axios.get("http://localhost:8800/Libros/"+etiqueta)
                     setContenido(res.data);
                 }
                
