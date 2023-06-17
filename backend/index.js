@@ -1,7 +1,6 @@
 import express from "express";
 import mysql from "mysql";
 import cors from "cors";
-import path from "path";
 const port = process.env.PORT || 3001;
 
 const app = express();
