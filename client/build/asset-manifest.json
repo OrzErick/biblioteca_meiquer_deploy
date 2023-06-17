@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4f0e188d.css",
+    "main.js": "/static/js/main.c433a1fc.js",
+    "static/media/libros.png": "/static/media/libros.cb5500a85f0eeb9d9df4.png",
+    "static/media/educador.png": "/static/media/educador.7857433b12e10918a8a8.png",
+    "static/media/estacion_meiquer_logo.png": "/static/media/estacion_meiquer_logo.9cf653325d0ad3951ab6.png",
+    "index.html": "/index.html",
+    "main.4f0e188d.css.map": "/static/css/main.4f0e188d.css.map",
+    "main.c433a1fc.js.map": "/static/js/main.c433a1fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f0e188d.css",
+    "static/js/main.c433a1fc.js"
+  ]
+}
