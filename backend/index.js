@@ -2,6 +2,7 @@ import express from "express";
 import mysql from "mysql";
 import cors from "cors";
 import path from "path";
+const port = process.env.PORT || 3001;
 
 const app = express();
 app.use(cors({ origin: true }));
@@ -180,7 +181,7 @@ app.get("/Actividades/:nombre", async (req, res) => {
 
 // ... Rest of your code
 
-const port = process.env.PORT || 3000;
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
