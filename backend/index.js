@@ -16,8 +16,7 @@ const dbConfig = {
 
 // ... Define connection pooling and query functions ...
 
-app.use(express.static(path.resolve(__dirname, "../client/build")));
-
+app.use(express.static(new URL("../client/build", import.meta.url).pathname));
 // Set CORS headers to allow cross-origin access
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "https://www.herokucdn.com");
