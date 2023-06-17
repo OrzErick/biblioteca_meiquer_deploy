@@ -63,6 +63,8 @@ app.get("/Acompanante", async (req, res) => {
 
 // Rest of your routes...
 
-app.listen(8800, () => {
-  console.log("Connected to back");
+const port = process.env.PORT || 8800; // Use the provided port or fallback to 8800
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
