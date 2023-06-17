@@ -16,10 +16,10 @@ const Videos = () => {
         const fetchVideos = async ()=>{
             try{
                 if(etiqueta == ""){
-                    const res = await axios.get("http://localhost:8800/Videos")
+                    const res = await axios.get("/Videos")
                     setContenido(res.data);
                 }else{
-                    const res = await axios.get("http://localhost:8800/Videos/"+etiqueta)
+                    const res = await axios.get("/Videos/"+etiqueta)
                     setContenido(res.data);
                 }
             }catch(err){

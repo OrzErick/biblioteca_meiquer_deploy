@@ -17,7 +17,7 @@ const InformacionActividades = () => {
     useEffect(()=>{
         const fetchActividad = async ()=>{
             try{
-                const res = await axios.get("http://localhost:8800/Actividad/"+idActividad)
+                const res = await axios.get("/Actividad/"+idActividad)
                 setContenido(res.data);
             }catch(err){
                 console.log(err)

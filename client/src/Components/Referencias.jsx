@@ -18,10 +18,10 @@ const Referencias = () => {
         const fetchActividades = async ()=>{
             try{
                 if(etiqueta == ""){
-                    const res = await axios.get("http://localhost:8800/Referencias")
+                    const res = await axios.get("/Referencias")
                     setContenido(res.data);
                 }else{
-                    const res = await axios.get("http://localhost:8800/Referencias/"+etiqueta)
+                    const res = await axios.get("/Referencias/"+etiqueta)
                     setContenido(res.data);
                 }
                
