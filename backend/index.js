@@ -14,7 +14,21 @@ const dbConfig = {
   database: "heroku_264c75a097e4d01",
 };
 
-// ... Define connection pooling and query functions ...
+// Create connection pool
+const pool = mysql.createPool(dbConfig);
+
+// Helper function to query from the connection pool
+const queryFromPool = (query) => {
+  return new Promise((resolve, reject) => {
+    pool.query(query, (error, results) => {
+      if (error) {
+        reject(error);
+      } else {
+        resolve(results);
+      }
+    });
+  });
+};
 
 app.use(express.static(new URL("../client/build", import.meta.url).pathname));
 // Set CORS headers to allow cross-origin access
@@ -50,6 +64,5 @@ app.get("/Acompanante", async (req, res) => {
 // Rest of your routes...
 
 app.listen(8800, () => {
-  createConnectionPool();
-  console.log("connected to back");
+  console.log("Connected to back");
 });
